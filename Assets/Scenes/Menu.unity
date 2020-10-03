@@ -1277,8 +1277,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -376, y: -59}
-  m_SizeDelta: {x: 227.71606, y: 216.54193}
+  m_AnchoredPosition: {x: -344, y: -41}
+  m_SizeDelta: {x: 219.60504, y: 216.54193}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &512466600
 MonoBehaviour:
@@ -5382,11 +5382,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Your days are compted.\nAfter a life spent on an Onion-manned farm, you
+  m_text: "Your days are numbered\nAfter a life spent on an Onion-manned farm, you
     decide to save the next generation from slaughter. \n\nYou have less than a minute
     left of your life. Gather your eggs and escape. Beware the fox and don't get
-    caught.\n\nDon't forget to lay an egg in a nest before your death as to let the
-    next generation to continue your work "
+    caught.\n\nDon't forget to lay an egg in a nest before your death to let the
+    next generation continue your work "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
