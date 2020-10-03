@@ -11,26 +11,13 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
-        MenuButton();
+
     }
 
     public void Play()
     {
         Debug.Log("Let's go");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
-    }
-
-    public void InstructionsButton()
-    {
-        Menu.SetActive(false);
-        Instructions.SetActive(true);
-    }
-
-    public void MenuButton()
-    {
-        // Show Main Menu
-        Menu.SetActive(true);
-        Instructions.SetActive(false);
     }
 
     public void QuitButton()
