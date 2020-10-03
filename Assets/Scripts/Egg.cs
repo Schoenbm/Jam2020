@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Egg : MonoBehaviour
 {
+    public float animationLength =2f;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animationLength = 2f;
     }
 
     // Update is called once per frame
@@ -21,13 +22,6 @@ public class Egg : MonoBehaviour
         //TODO: play animation
 
         // destroy egg shell after animation
-        float animationLength = 2f; // TODO: replace 0 with animation length
-        StartCoroutine(waitCoroutine(animationLength));
         Destroy(gameObject, animationLength);
-    }
-
-    IEnumerator waitCoroutine(float waitTime)
-    {
-        yield return ( new WaitForSeconds(waitTime));
     }
 }

@@ -10,6 +10,8 @@ public class GameController : MonoBehaviour
     public Text timerText;
     private float timeLeft = 60f;
     private Egg egg; // keeps track of the egg that will hatch
+    private bool notHatching = true;
+
 
     public GameObject[] playerPrefabs;
     private Player player;
@@ -36,7 +38,7 @@ public class GameController : MonoBehaviour
     {
         timeLeft -= Time.deltaTime;
 
-        if(timeLeft < 0)
+        if(timeLeft < 0 && notHatching)
         {
             TimeUp();
         }
@@ -52,6 +54,7 @@ public class GameController : MonoBehaviour
         
         if (egg != null)    
         {
+            notHatching = false;
             // camera look at egg that will hatch (blends smoothly)
             cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().m_LookAt = egg.transform;
             cameras[activeCamera].SetActive(false);
@@ -59,9 +62,8 @@ public class GameController : MonoBehaviour
 
             cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().m_Follow = egg.transform;
             egg.Hatch(); // egg hatching animation
+            StartCoroutine(waitSpawn(egg.animationLength, inactiveCamera, egg.transform.position));
 
-            int randInt = Random.Range(0, playerPrefabs.Length);
-            player = Instantiate(playerPrefabs[randInt], egg.transform.position, Quaternion.identity).GetComponent<Player>(); // create next chicken
         }
         else
         {
@@ -70,12 +72,12 @@ public class GameController : MonoBehaviour
 
         // camera follows new player
 
-        cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().m_Follow = player.transform;
+       // cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().m_Follow = player.transform;
 
-        activeCamera = inactiveCamera; // switch cameras
+        //activeCamera = inactiveCamera; // switch cameras
 
         // reset timer (maybe wait a bit so it's not that immediate)
-        timeLeft = player.lifeSpan;
+        //timeLeft = player.lifeSpan;
     }
 
     public void SetEgg(Egg e)
@@ -83,6 +85,18 @@ public class GameController : MonoBehaviour
         egg = e;
     }
 
+    IEnumerator waitSpawn(float waitTime, int inactiveCamera, Vector3 eggPosition) {
+        yield return new WaitForSeconds(waitTime);
+        int randInt = Random.Range(0, playerPrefabs.Length);
+        player = Instantiate(playerPrefabs[randInt], eggPosition, Quaternion.identity).GetComponent<Player>(); // create next chicken
 
+
+        cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().m_Follow = player.transform;
+
+        activeCamera = inactiveCamera; // switch cameras
+
+        timeLeft = player.lifeSpan;
+        notHatching = true;
+    }
 
 }
