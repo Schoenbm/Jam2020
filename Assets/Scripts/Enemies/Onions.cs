@@ -6,11 +6,18 @@ public class Onions : MonoBehaviour
 {
     // i'm litteraly programming an onion class. what i have become.
 
-    [SerializeField] private float speed = 10;
+    [SerializeField] private float minSpeed;
+    [SerializeField] private float maxSpeed;
     private Vector3 direction;
     private GameObject aPlayer;
     private bool foundPlayer = false;
     private bool playerOnTrigger = false;
+    private float speed;
+
+    public void Start()
+    {
+        speed = Random.Range(minSpeed, maxSpeed);
+    }
 
     public void OnTriggerStay2D(Collider2D collision)
     {
