@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     public Text timerText;
     public Text eggText;
 
-    [SerializeField] private int totalEggs;
+    [SerializeField] private int totalEggs = 0;
     private int totalEggsCollected;
 
     private float timeLeft = 60f;
