@@ -282,6 +282,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &500010808 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8901397765031948595, guid: b7fe4c43cfb5268418689e9f98a28c0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1457798613}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &700107046
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5121176717985481404, guid: db2a37d445aaec542b0ec0c7f19bb495,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121176717985481404, guid: db2a37d445aaec542b0ec0c7f19bb495,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121176717985481404, guid: db2a37d445aaec542b0ec0c7f19bb495,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121176717985481404, guid: db2a37d445aaec542b0ec0c7f19bb495,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121176717985481404, guid: db2a37d445aaec542b0ec0c7f19bb495,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121176717985481404, guid: db2a37d445aaec542b0ec0c7f19bb495,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121176717985481404, guid: db2a37d445aaec542b0ec0c7f19bb495,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121176717985481404, guid: db2a37d445aaec542b0ec0c7f19bb495,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121176717985481404, guid: db2a37d445aaec542b0ec0c7f19bb495,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121176717985481404, guid: db2a37d445aaec542b0ec0c7f19bb495,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121176717985481404, guid: db2a37d445aaec542b0ec0c7f19bb495,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5209636832033358147, guid: db2a37d445aaec542b0ec0c7f19bb495,
+        type: 3}
+      propertyPath: m_Name
+      value: huevo1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db2a37d445aaec542b0ec0c7f19bb495, type: 3}
 --- !u!1 &1260496308
 GameObject:
   m_ObjectHideFlags: 3
@@ -796,6 +877,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1704758852}
+  eggText: {fileID: 500010808}
+  totalEggs: 3
   playerPrefabs:
   - {fileID: 2946842345309789281, guid: 36cbe87a85eb74f4c8369280e34a8923, type: 3}
   - {fileID: 5319935248459791567, guid: 74f6c5cffa1606a4cb12e67d4c05f44e, type: 3}

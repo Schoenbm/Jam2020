@@ -8,6 +8,11 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public Text timerText;
+    public Text eggText;
+
+    [SerializeField] private int totalEggs;
+    private int totalEggsCollected;
+
     private float timeLeft = 60f;
     private Egg egg; // keeps track of the egg that will hatch
     private bool notHatching = true;
@@ -32,6 +37,7 @@ public class GameController : MonoBehaviour
     void Update()
     {
         Countdown();
+        collectibleEggRatio();
     }
 
     void Countdown()
@@ -48,6 +54,7 @@ public class GameController : MonoBehaviour
     
     void TimeUp()
     {
+        totalEggsCollected += player.getEggCount();
         player.Die(); // destroy player
 
         int inactiveCamera = (activeCamera + 1) % 2;
@@ -60,24 +67,15 @@ public class GameController : MonoBehaviour
             cameras[activeCamera].SetActive(false);
             cameras[inactiveCamera].SetActive(true);
 
-            cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().m_Follow = egg.transform;
             egg.Hatch(); // egg hatching animation
             StartCoroutine(waitSpawn(egg.animationLength, inactiveCamera, egg.transform.position));
-
+            
         }
         else
         {
             SceneManager.LoadScene(0); // to change
         }
-
-        // camera follows new player
-
-       // cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().m_Follow = player.transform;
-
-        //activeCamera = inactiveCamera; // switch cameras
-
-        // reset timer (maybe wait a bit so it's not that immediate)
-        //timeLeft = player.lifeSpan;
+        
     }
 
     public void SetEgg(Egg e)
@@ -91,7 +89,7 @@ public class GameController : MonoBehaviour
         player = Instantiate(playerPrefabs[randInt], eggPosition, Quaternion.identity).GetComponent<Player>(); // create next chicken
 
 
-        cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().m_Follow = player.transform;
+        cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().m_Follow = player.transform; // camera look at the player back
 
         activeCamera = inactiveCamera; // switch cameras
 
@@ -99,4 +97,9 @@ public class GameController : MonoBehaviour
         notHatching = true;
     }
 
+    private void collectibleEggRatio()
+    {
+        int eggsCollectedRun = player.getEggCount();
+        eggText.text = (eggsCollectedRun + totalEggsCollected).ToString(    ) + " / " + totalEggs; 
+    }
 }
