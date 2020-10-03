@@ -24,5 +24,6 @@ public class Nest : MonoBehaviour
         // create new egg in nest and pass it to game controller
         GameObject newEgg = Instantiate(egg, transform.position, Quaternion.identity);
         gameController.SetEgg(newEgg.GetComponent<Egg>());
+        Debug.Log("out");
     }
 }

@@ -21,7 +21,13 @@ public class Egg : MonoBehaviour
         //TODO: play animation
 
         // destroy egg shell after animation
-        float animationLength = 0f; // TODO: replace 0 with animation length
+        float animationLength = 2f; // TODO: replace 0 with animation length
+        StartCoroutine(waitCoroutine(animationLength));
         Destroy(gameObject, animationLength);
+    }
+
+    IEnumerator waitCoroutine(float waitTime)
+    {
+        yield return ( new WaitForSeconds(waitTime));
     }
 }

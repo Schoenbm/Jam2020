@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public float walkSpeed = 10f;
     public float runSpeed = 20f;
+    public float lifeSpan = 40f;
 
     private SpriteRenderer spriteRenderer;
     private bool isFacingRight = false;
