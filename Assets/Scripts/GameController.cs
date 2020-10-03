@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public Text timerText;
-    private float timeLeft = 5f;
+    private float timeLeft = 60f;
     private Egg egg; // keeps track of the egg that will hatch
 
     public GameObject playerPrefab;
     private Player player;
 
-    public GameObject[] cameras;
+    public GameObject[] cameras; // 2 cameras needed, 1 deactivated/inactive
     private int activeCamera = 0; // index for active camera
 
     // Start is called before the first frame update
@@ -67,8 +67,8 @@ public class GameController : MonoBehaviour
 
         activeCamera = inactiveCamera; // switch cameras
 
-        // reset timer
-        timeLeft = 5f;
+        // reset timer (maybe wait a bit so it's not that immediate)
+        timeLeft = 60f;
     }
 
     public void SetEgg(Egg e)
