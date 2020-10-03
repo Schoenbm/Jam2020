@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private bool isFacingRight = false;
+    private int collectedEggs = 0;
 
     private bool canLayEgg = true;
     private bool hasEgg = true;
@@ -21,7 +22,6 @@ public class Player : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // TODO: set stats and chicken variation sprite
     }
 
     // Update is called once per frame
@@ -70,6 +70,12 @@ public class Player : MonoBehaviour
             canLayEgg = true;
             lastNest = collision.gameObject.GetComponent<Nest>();
         }
+        else if(collision.gameObject.tag == "Egg")
+        {
+            collectedEggs++;
+            Debug.Log("collected : " + collectedEggs);
+            Destroy(collision.gameObject);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -99,5 +105,10 @@ public class Player : MonoBehaviour
         {
             canLayEgg = false;
         }
+    }
+
+    public int getEggCount()
+    {
+        return collectedEggs;
     }
 }
