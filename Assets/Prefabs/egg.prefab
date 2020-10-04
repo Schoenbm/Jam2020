@@ -94,4 +94,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d530546c5914c74ca079a12088d1c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationLength: 10
+  animationLength: 2

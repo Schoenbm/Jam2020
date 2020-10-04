@@ -101,9 +101,10 @@ public class GameController : MonoBehaviour
         notHatching = true;
     }
 
-    private void collectibleEggRatio()
+    private void collectibleEggRatio() // write eggs on text
     {
         int eggsCollectedRun = player.getEggCount();
+        Debug.Log(player.getEggCount());
         eggText.text = (eggsCollectedRun + totalEggsCollected).ToString(    ) + " / " + totalEggs; 
     }
 }

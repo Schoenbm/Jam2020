@@ -87,6 +87,7 @@ public class Player : MonoBehaviour
         {
             hasEgg = true;
             canLayEgg = true;
+            collectedEggs++;
             Debug.Log("collected : " + collectedEggs);
             Destroy(collision.gameObject);
         }
