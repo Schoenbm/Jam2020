@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
     public void Die()
     {
         this.gameController.manageDeath(collectedEggs);
-
+        
         source[2].Play();
         Destroy(gameObject); 
     }
