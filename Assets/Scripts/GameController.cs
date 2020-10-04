@@ -64,7 +64,7 @@ public class GameController : MonoBehaviour
         {
             notHatching = false;
             // camera look at egg that will hatch (blends smoothly)
-            cameras[inactiveCamera].transform.position = egg.transform.position;
+            cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().Follow = egg.transform;
             cameras[activeCamera].SetActive(false);
             cameras[inactiveCamera].SetActive(true);
 

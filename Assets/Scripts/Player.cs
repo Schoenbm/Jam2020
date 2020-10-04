@@ -59,14 +59,13 @@ public class Player : MonoBehaviour
         // flip if necessary
         if (isFacingRight && h < 0)
         {
-            isFacingRight = false;
+            this.transform.localScale = new Vector3(1,1,1);
         }
         else if (!isFacingRight && h > 0)
         {
-            isFacingRight = true;
+            this.transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        spriteRenderer.flipX = isFacingRight;
     }
 
     public void Die()
