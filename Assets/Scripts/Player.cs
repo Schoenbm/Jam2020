@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     public float walkSpeed = 10f;
     public float runSpeed = 20f;
     public float lifeSpan = 40f;
+    
+    private float duringAttack = 0f;
 
     private SpriteRenderer spriteRenderer;
     private bool isFacingRight = false;
@@ -17,7 +19,7 @@ public class Player : MonoBehaviour
     private bool isLayingEgg = false;
     private Nest lastNest; // last nest the player interacted with
 
-
+    public  BoxCollider2D hitBoxAttack;
     private GameController gameController; // set by the gameController
 
 
@@ -31,7 +33,7 @@ public class Player : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-
+        hitBoxAttack.enabled =false;
     }
 
     // Update is called once per frame
@@ -125,16 +127,22 @@ public class Player : MonoBehaviour
         return collectedEggs;
     }
 
-    private void Attack()
+    public void Attack()
     {
         if (Input.GetAxisRaw("Fire1") != 0 && actualCd <= 0) // Fire 1 is "X" on xbox, "Q" on keyboard, left clic on mouse.
         {
+            hitBoxAttack.enabled =true;
             Debug.Log("pew pew");
             //TODO ATTACK
             actualCd = cdAttack;
+            duringAttack = 0.3f;
         }
         if (actualCd > 0)
             actualCd -= Time.deltaTime;
+        if (duringAttack > 0)
+            duringAttack -= Time.deltaTime;
+        else if (hitBoxAttack.enabled)
+            hitBoxAttack.enabled = false;
     }
 
 

@@ -10,9 +10,9 @@ public class OnionHitBox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "attack")
+        if (collision.gameObject.tag == "Attack") 
         {
-            Destroy(transform.parent.gameObject);
+            Destroy(transform.parent.gameObject);   
         }
         else if(collision.gameObject.tag == "Player")
         {
