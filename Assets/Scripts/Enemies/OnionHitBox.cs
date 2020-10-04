@@ -16,6 +16,7 @@ public class OnionHitBox : MonoBehaviour
     {
         if (collision.gameObject.tag == "Attack") 
         {
+            GameObject.Find("AudioManager").GetComponent<AudioManager>().playOnionDeath();
             Destroy(transform.parent.transform.parent.gameObject);
         }
         else if(collision.gameObject.tag == "Player" && !ded )
