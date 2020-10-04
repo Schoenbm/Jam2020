@@ -8,13 +8,19 @@ public class Onions : MonoBehaviour
 
     [SerializeField] private float minSpeed;
     [SerializeField] private float maxSpeed;
+    [SerializeField] private float maxDistance;
+    [SerializeField] private float distanciationForce;
+
     private Vector3 direction;
     private GameObject aPlayer;
     private bool foundPlayer = false;
     private float speed;
 
+    private Rigidbody2D rb2d;
+
     public void Start()
     {
+        rb2d = this.gameObject.GetComponentInParent<Rigidbody2D>();
         speed = Random.Range(minSpeed, maxSpeed);
     }
 
@@ -22,6 +28,7 @@ public class Onions : MonoBehaviour
     {
         if (!foundPlayer && collision.gameObject.tag == "Player")
         {
+            Debug.Log("found player on trigger");
             RaycastHit2D hit;
             hit = Physics2D.Raycast(this.transform.position, collision.gameObject.transform.position - this.transform.position);
             if (hit.collider == null)
@@ -29,17 +36,26 @@ public class Onions : MonoBehaviour
                 foundPlayer = true;
                 aPlayer = collision.gameObject;
             }
-
+            else
+            {
+                Debug.Log("problem : object in between");
+            }
         }
 
-        if (foundPlayer && collision.gameObject.tag.Equals("Onion"))
+        if (collision.gameObject.tag.Equals("Onion"))
         {
             RaycastHit2D hit;
             hit = Physics2D.Raycast(this.transform.position, collision.gameObject.transform.position - this.transform.position);
             if (hit.collider == null)
             {
                 Debug.Log("Alert sent");
-                collision.gameObject.GetComponent<Onions>().alertOnion(this.aPlayer);
+                if(foundPlayer)
+                    collision.gameObject.GetComponent<Onions>().alertOnion(this.aPlayer);
+
+                direction = this.transform.position - collision.transform.position;
+
+                if (direction.magnitude < maxDistance)
+                    rb2d.AddForce(direction.normalized * distanciationForce);
             }
             else
                 Debug.Log(hit.transform.gameObject.tag);
@@ -54,14 +70,16 @@ public class Onions : MonoBehaviour
         }
         else if (foundPlayer)
         {
+            Debug.Log("found player");
             direction = aPlayer.gameObject.transform.position - this.transform.position;
-            this.transform.position += direction.normalized * speed * Time.deltaTime;
+            if (rb2d.velocity.magnitude < maxSpeed)
+                rb2d.AddForce(direction.normalized * speed);
+            //this.transform.position += direction.normalized * speed * Time.deltaTime;
         }
     }
 
     public void alertOnion(GameObject pPlayer)
     {
-        Debug.Log("alert rouuuuuuuuuuge");
         this.aPlayer = pPlayer;
         foundPlayer = true;
     }

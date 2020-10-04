@@ -86,7 +86,6 @@ public class Player : MonoBehaviour
         else if(collision.gameObject.tag == "Egg")
         {
             hasEgg = true;
-            canLayEgg = true;
             collectedEggs++;
             Debug.Log("collected : " + collectedEggs);
             Destroy(collision.gameObject);
