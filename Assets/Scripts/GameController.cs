@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    public Transform spawnPoint;
     public Text timerText;
     public Text eggText;
 
@@ -28,7 +29,11 @@ public class GameController : MonoBehaviour
     void Start()
     {
         int randInt = Random.Range(0, playerPrefabs.Length);
-        player = Instantiate(playerPrefabs[randInt]).GetComponent<Player>();
+        if(spawnPoint != null)
+            player = Instantiate(playerPrefabs[randInt], spawnPoint).GetComponent<Player>();
+        else
+            player = Instantiate(playerPrefabs[randInt]).GetComponent<Player>();
+
         player.setGameController(this);
         timeLeft = player.lifeSpan;
         cameras[activeCamera].GetComponent<CinemachineVirtualCamera>().m_Follow = player.transform;
