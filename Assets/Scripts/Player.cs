@@ -76,7 +76,8 @@ public class Player : MonoBehaviour
         this.gameController.manageDeath(collectedEggs);
         
         source[2].Play();
-        Destroy(gameObject); 
+        this.GetComponent<SpriteRenderer>().enabled = false;
+        Destroy(gameObject,1f); 
     }
 
 
