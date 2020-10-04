@@ -57,11 +57,11 @@ public class Player : MonoBehaviour
         transform.position += movement * moveSpeed * Time.deltaTime;
 
         // flip if necessary
-        if (isFacingRight && h < 0)
+        if ( h < 0)
         {
             this.transform.localScale = new Vector3(1,1,1);
         }
-        else if (!isFacingRight && h > 0)
+        else if (h > 0)
         {
             this.transform.localScale = new Vector3(-1, 1, 1);
         }
