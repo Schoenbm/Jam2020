@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
 
 
     [SerializeField] private float cdAttack = 0;
+    public AudioSource[] source;
+
     private float actualCd;
 
     private Animator animator;
@@ -34,6 +36,7 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         hitBoxAttack.enabled =false;
+
     }
 
     // Update is called once per frame
@@ -72,6 +75,7 @@ public class Player : MonoBehaviour
     {
         this.gameController.manageDeath(collectedEggs);
 
+        source[2].Play();
         Destroy(gameObject); 
     }
 
@@ -101,6 +105,7 @@ public class Player : MonoBehaviour
             {
                 if (!layedEgg && canLayEgg && hasEgg)
                 {
+                    source[0].Play();
                     layedEgg = true;
                     lastNest.LayEgg();
                 }
@@ -125,6 +130,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetAxisRaw("Fire1") != 0 && actualCd <= 0) // Fire 1 is "X" on xbox, "Q" on keyboard, left clic on mouse.
         {
+            source[1].Play();
             hitBoxAttack.enabled =true;
             Debug.Log("pew pew");
             //TODO ATTACK
@@ -147,7 +153,12 @@ public class Player : MonoBehaviour
 
         if (isWalking != animIsWalking)
         {
+            source[3].Play();
             animator.SetBool("isWalking", isWalking);
+        } 
+        else if (source[3].isPlaying && !isWalking)
+        {
+            source[3].Stop();
         }
     }
 
