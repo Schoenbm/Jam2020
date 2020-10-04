@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Nest
   - Egg
+  - Onion
   layers:
   - Default
   - TransparentFX
