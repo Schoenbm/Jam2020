@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
 
     private bool canLayEgg = false;
     private bool hasEgg = false;
-    private bool isLayingEgg = false;
+    private bool layedEgg = false;
     private Nest lastNest; // last nest the player interacted with
 
     public  BoxCollider2D hitBoxAttack;
@@ -99,16 +99,11 @@ public class Player : MonoBehaviour
         {
             if (Input.GetAxisRaw("Fire2") != 0) // 'Fire2' is 'B' in Xbox controller and left mouse or 'E' in keyboard
             {
-                if (!isLayingEgg && canLayEgg && hasEgg)
+                if (!layedEgg && canLayEgg && hasEgg)
                 {
-                    isLayingEgg = true;
-                    hasEgg = false;
+                    layedEgg = true;
                     lastNest.LayEgg();
                 }
-            }
-            else
-            {
-                isLayingEgg = false;
             }
         }
     }

@@ -105,6 +105,6 @@ public class GameController : MonoBehaviour
     {
         int eggsCollectedRun = player.getEggCount();
         Debug.Log(player.getEggCount());
-        eggText.text = (eggsCollectedRun + totalEggsCollected).ToString(    ) + " / " + totalEggs; 
+        eggText.text = (eggsCollectedRun + totalEggsCollected).ToString() + " / " + totalEggs; 
     }
 }
