@@ -11,7 +11,6 @@ public class Onions : MonoBehaviour
     private Vector3 direction;
     private GameObject aPlayer;
     private bool foundPlayer = false;
-    private bool playerOnTrigger = false;
     private float speed;
 
     public void Start()
@@ -24,26 +23,46 @@ public class Onions : MonoBehaviour
         if (!foundPlayer && collision.gameObject.tag == "Player")
         {
             RaycastHit2D hit;
-            playerOnTrigger = true;
-            hit = Physics2D.Raycast(this.transform.position, collision.gameObject.transform.position);
+            hit = Physics2D.Raycast(this.transform.position, collision.gameObject.transform.position - this.transform.position);
             if (hit.collider == null)
             {
-                Debug.Log("nothing between");
                 foundPlayer = true;
                 aPlayer = collision.gameObject;
             }
+
+        }
+
+        if (foundPlayer && collision.gameObject.tag.Equals("Onion"))
+        {
+            RaycastHit2D hit;
+            hit = Physics2D.Raycast(this.transform.position, collision.gameObject.transform.position - this.transform.position);
+            if (hit.collider == null)
+            {
+                Debug.Log("Alert sent");
+                collision.gameObject.GetComponent<Onions>().alertOnion(this.aPlayer);
+            }
             else
                 Debug.Log(hit.transform.gameObject.tag);
-
         }
     }
 
     public void Update()
     {
-        if (foundPlayer)
+        if (foundPlayer && aPlayer == null)
+        {
+            foundPlayer = false;
+        }
+        else if (foundPlayer)
         {
             direction = aPlayer.gameObject.transform.position - this.transform.position;
-            this.transform.position += direction * speed * Time.deltaTime;
+            this.transform.position += direction.normalized * speed * Time.deltaTime;
         }
+    }
+
+    public void alertOnion(GameObject pPlayer)
+    {
+        Debug.Log("alert rouuuuuuuuuuge");
+        this.aPlayer = pPlayer;
+        foundPlayer = true;
     }
 }

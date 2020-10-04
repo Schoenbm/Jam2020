@@ -12,10 +12,14 @@ public class Player : MonoBehaviour
     private bool isFacingRight = false;
     private int collectedEggs = 0;
 
-    private bool canLayEgg = true;
-    private bool hasEgg = true;
+    private bool canLayEgg = false;
+    private bool hasEgg = false;
     private bool isLayingEgg = false;
     private Nest lastNest; // last nest the player interacted with
+
+
+    private GameController gameController; // set by the gameController
+
 
     [SerializeField] private float cdAttack = 0;
     private float actualCd;
@@ -24,7 +28,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-
     }
 
     // Update is called once per frame
@@ -62,9 +65,15 @@ public class Player : MonoBehaviour
     public void Die()
     {
         // TODO: play animation
-
-        float animationLength = 0f; // TODO: replace 0 with animation length
+        StartCoroutine(DieCoroutine());
+        float animationLength = 1f; // TODO: replace 0 with animation length
         Destroy(gameObject, animationLength); 
+    }
+
+    IEnumerator DieCoroutine()
+    {
+        this.gameController.manageDeath(collectedEggs);
+        yield return null;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -76,7 +85,8 @@ public class Player : MonoBehaviour
         }
         else if(collision.gameObject.tag == "Egg")
         {
-            collectedEggs++;
+            hasEgg = true;
+            canLayEgg = true;
             Debug.Log("collected : " + collectedEggs);
             Destroy(collision.gameObject);
         }
@@ -126,5 +136,10 @@ public class Player : MonoBehaviour
         }
         if (actualCd > 0)
             actualCd -= Time.deltaTime;
+    }
+
+    public void setGameController(GameController pGC)
+    {
+        this.gameController = pGC;
     }
 }
