@@ -49,7 +49,8 @@ public class GameController : MonoBehaviour
             TimeUp();
         }
 
-        timerText.text = Mathf.Round(timeLeft).ToString();
+        timerText.text = Mathf.Round(timeLeft > 0 ? timeLeft : 0).ToString();
+
     }
     
     void TimeUp()
@@ -63,7 +64,7 @@ public class GameController : MonoBehaviour
         {
             notHatching = false;
             // camera look at egg that will hatch (blends smoothly)
-            cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().m_LookAt = egg.transform;
+            cameras[inactiveCamera].transform.position = egg.transform.position;
             cameras[activeCamera].SetActive(false);
             cameras[inactiveCamera].SetActive(true);
 
@@ -88,8 +89,8 @@ public class GameController : MonoBehaviour
         int randInt = Random.Range(0, playerPrefabs.Length);
         player = Instantiate(playerPrefabs[randInt], eggPosition, Quaternion.identity).GetComponent<Player>(); // create next chicken
 
-
-        cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().m_Follow = player.transform; // camera look at the player back
+        // there is a slight delay which makes the camera move weird for a second
+        cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().Follow = player.transform; // camera look at the player back
 
         activeCamera = inactiveCamera; // switch cameras
 
