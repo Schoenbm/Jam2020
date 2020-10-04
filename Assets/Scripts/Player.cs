@@ -69,17 +69,11 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
-        // TODO: play animation
-        StartCoroutine(DieCoroutine());
-        float animationLength = 1f; // TODO: replace 0 with animation length
-        Destroy(gameObject, animationLength); 
+        this.gameController.manageDeath(collectedEggs);
+
+        Destroy(gameObject); 
     }
 
-    IEnumerator DieCoroutine()
-    {
-        this.gameController.manageDeath(collectedEggs);
-        yield return null;
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

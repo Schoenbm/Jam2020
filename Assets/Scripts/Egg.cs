@@ -8,7 +8,7 @@ public class Egg : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animationLength = 2f;
+        animationLength = 1.5f;
     }
 
     // Update is called once per frame

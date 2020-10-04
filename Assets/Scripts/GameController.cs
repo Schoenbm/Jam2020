@@ -94,6 +94,7 @@ public class GameController : MonoBehaviour
         cameras[inactiveCamera].GetComponent<CinemachineVirtualCamera>().Follow = player.transform; // camera look at the player back
         player.setGameController(this);
 
+
         activeCamera = inactiveCamera; // switch cameras
 
         timeLeft = player.lifeSpan;
