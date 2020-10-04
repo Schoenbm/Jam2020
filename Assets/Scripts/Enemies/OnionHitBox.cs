@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class OnionHitBox : MonoBehaviour
 {
+    public AudioSource deathAudio;
+    public BoxCollider2D hitbox;
+    public SpriteRenderer onionSprite;
+    public Rigidbody2D rb2d;
 
     //TODO : Kill current chicken if hits chicken
     //a destroy parent function if hit by attack
@@ -12,7 +16,11 @@ public class OnionHitBox : MonoBehaviour
     {
         if (collision.gameObject.tag == "Attack") 
         {
-            Destroy(transform.parent.transform.parent.gameObject);   
+            deathAudio.Play();
+            onionSprite.enabled = false;
+            hitbox.enabled = false;
+            rb2d.Sleep();
+            Destroy(transform.parent.transform.parent.gameObject, 2f);
         }
         else if(collision.gameObject.tag == "Player")
         {
