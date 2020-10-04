@@ -807,6 +807,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 1.5546265
       objectReference: {fileID: 0}
+    - target: {fileID: 1408262853032341992, guid: b7fe4c43cfb5268418689e9f98a28c0a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.0217896
+      objectReference: {fileID: 0}
     - target: {fileID: 7677915100135358615, guid: b7fe4c43cfb5268418689e9f98a28c0a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1296,7 +1301,7 @@ MonoBehaviour:
   eggText: {fileID: 500010808}
   totalEggs: 3
   playerPrefabs:
-  - {fileID: 2946842345309789281, guid: 36cbe87a85eb74f4c8369280e34a8923, type: 3}
+  - {fileID: 5319935248459791567, guid: 74f6c5cffa1606a4cb12e67d4c05f44e, type: 3}
   - {fileID: 5319935248459791567, guid: 74f6c5cffa1606a4cb12e67d4c05f44e, type: 3}
   cameras:
   - {fileID: 1752666766}
