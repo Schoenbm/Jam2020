@@ -6,6 +6,9 @@ public class Onions : MonoBehaviour
 {
     // i'm litteraly programming an onion class. what i have become.
 
+
+    public AudioSource alarmAudio;
+   
     [SerializeField] private float minSpeed;
     [SerializeField] private float maxSpeed;
     [SerializeField] private float maxDistance;
@@ -40,6 +43,7 @@ public class Onions : MonoBehaviour
             {
                 foundPlayer = true;
                 aPlayer = collision.gameObject;
+                alarmAudio.Play();
             }
             else
             {
@@ -87,7 +91,6 @@ public class Onions : MonoBehaviour
 
             if (vel.magnitude < maxSpeed)
                 rb2d.AddForce(direction.normalized * speed);
-            //this.transform.position += direction.normalized * speed * Time.deltaTime;
         }
     }
 
