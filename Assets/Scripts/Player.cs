@@ -24,15 +24,20 @@ public class Player : MonoBehaviour
     [SerializeField] private float cdAttack = 0;
     private float actualCd;
 
+    private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        Animate();
         Move();
         Attack();
     }
@@ -136,6 +141,18 @@ public class Player : MonoBehaviour
         }
         if (actualCd > 0)
             actualCd -= Time.deltaTime;
+    }
+
+
+    private void Animate()
+    {
+        bool isWalking = Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0;
+        bool animIsWalking = animator.GetBool("isWalking");
+
+        if (isWalking != animIsWalking)
+        {
+            animator.SetBool("isWalking", isWalking);
+        }
     }
 
     public void setGameController(GameController pGC)
