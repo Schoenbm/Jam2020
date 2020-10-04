@@ -18,10 +18,15 @@ public class Onions : MonoBehaviour
 
     private Rigidbody2D rb2d;
 
+    private SpriteRenderer spriteRenderer;
+    private Animator animator;
+
     public void Start()
     {
         rb2d = this.gameObject.GetComponentInParent<Rigidbody2D>();
         speed = Random.Range(minSpeed, maxSpeed);
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void OnTriggerStay2D(Collider2D collision)
@@ -64,6 +69,9 @@ public class Onions : MonoBehaviour
 
     public void Update()
     {
+        Animate();
+
+
         if (foundPlayer && aPlayer == null)
         {
             foundPlayer = false;
@@ -72,7 +80,12 @@ public class Onions : MonoBehaviour
         {
             Debug.Log("found player");
             direction = aPlayer.gameObject.transform.position - this.transform.position;
-            if (rb2d.velocity.magnitude < maxSpeed)
+
+            Vector3 vel = rb2d.velocity;
+
+            spriteRenderer.flipX = vel.x < 0;
+
+            if (vel.magnitude < maxSpeed)
                 rb2d.AddForce(direction.normalized * speed);
             //this.transform.position += direction.normalized * speed * Time.deltaTime;
         }
@@ -82,5 +95,15 @@ public class Onions : MonoBehaviour
     {
         this.aPlayer = pPlayer;
         foundPlayer = true;
+    }
+
+    private void Animate()
+    {
+        bool animIsWalking = animator.GetBool("isWalking");
+
+        if(animIsWalking != foundPlayer)
+        {
+            animator.SetBool("isWalking", foundPlayer);
+        }
     }
 }
