@@ -60,6 +60,7 @@ public class Onions : MonoBehaviour
             hit = Physics2D.Raycast(this.transform.position, collision.gameObject.transform.position, maxDistance);
             if (hit.collider == null)
             {
+                Debug.Log("Alert sent");
                 if(foundPlayer)
                     collision.gameObject.GetComponent<OnionListener>().listenOnion(this.aPlayer);
 
@@ -68,6 +69,8 @@ public class Onions : MonoBehaviour
                 if (direction.magnitude < maxDistance)
                     rb2d.AddForce(direction.normalized * distanciationForce);
             }
+            else
+                Debug.Log(hit.transform.gameObject.tag);
         }
     }
 
@@ -82,6 +85,7 @@ public class Onions : MonoBehaviour
         }
         else if (foundPlayer)
         {
+            Debug.Log("found player");
             direction = aPlayer.gameObject.transform.position - this.transform.position;
 
             Vector3 vel = rb2d.velocity;

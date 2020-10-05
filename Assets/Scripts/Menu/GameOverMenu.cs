@@ -6,10 +6,38 @@ using UnityEngine.UI;
 
 public class GameOverMenu : MonoBehaviour
 {
-    public void quitGame()
+    public GameController gameController; 
+    public GameObject GameOverEvent;
+    public GameObject GameVictoryEvent;
+    private bool gameHadEnded = false; // GAME OVER BIATCH
+    public Text ScoreEggs;
+
+    public void GameOver() // GAME OVER
     {
-        Application.Quit();
+        
+        if (gameHadEnded == false)
+        {
+            gameHadEnded = true;
+            Debug.Log("GameOver");
+            Time.timeScale = 0f;
+            GameOverEvent.SetActive(true);
+            gameHadEnded = false;
+            
+        }
     }
+
+    public void GameVictory() // GAME VICTORY
+    {
+        if(gameHadEnded == false)
+        {
+            Time.timeScale = 0f;
+            gameHadEnded = true;
+            GameVictoryEvent.SetActive(true);
+            ScoreEggs.text = gameController.getScore().ToString();
+            gameHadEnded = false;
+        }
+    }
+
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
