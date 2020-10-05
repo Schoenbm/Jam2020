@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public float lifeSpan = 40f;
     
     private float duringAttack = 0f;
+    private float attackAnimationLength;
 
     private SpriteRenderer spriteRenderer;
     private bool isFacingRight = false;
@@ -38,6 +39,9 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         hitBoxAttack.enabled =false;
+
+        AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
+        attackAnimationLength = clips[2].length * 2; // clips[1] is egg crack
 
     }
 
@@ -148,14 +152,21 @@ public class Player : MonoBehaviour
             Debug.Log("pew pew");
             //TODO ATTACK
             actualCd = cdAttack;
-            duringAttack = 0.3f;
+            duringAttack = attackAnimationLength;
+
+
+            animator.SetBool("isAttacking", true);
+            
         }
         if (actualCd > 0)
             actualCd -= Time.deltaTime;
         if (duringAttack > 0)
             duringAttack -= Time.deltaTime;
         else if (hitBoxAttack.enabled)
+        {
+            animator.SetBool("isAttacking", false);
             hitBoxAttack.enabled = false;
+        }
     }
 
 
