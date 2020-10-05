@@ -3654,10 +3654,10 @@ TextureImporter:
       name: poyo_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 484
-        y: 11
-        width: 840
-        height: 1069
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3675,10 +3675,10 @@ TextureImporter:
       name: poyo_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 2389
-        y: 34
-        width: 855
-        height: 1042
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3696,10 +3696,10 @@ TextureImporter:
       name: poyo_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 4294
-        y: 19
-        width: 870
-        height: 1042
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3717,10 +3717,10 @@ TextureImporter:
       name: poyo_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 6199
-        y: 11
-        width: 885
-        height: 1035
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3738,10 +3738,10 @@ TextureImporter:
       name: poyo_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 8096
-        y: 23
-        width: 923
-        height: 1008
+        x: 7680
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3759,10 +3759,10 @@ TextureImporter:
       name: poyo_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 10046
-        y: 34
-        width: 911
-        height: 1005
+        x: 9600
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3780,10 +3780,10 @@ TextureImporter:
       name: poyo_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 11959
-        y: 49
-        width: 900
-        height: 1005
+        x: 11520
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3801,10 +3801,10 @@ TextureImporter:
       name: poyo_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 13879
-        y: 11
-        width: 885
-        height: 1058
+        x: 13440
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3814,48 +3814,6 @@ TextureImporter:
       bones: []
       spriteID: 9c68426fc9ac3b130800000000000000
       internalID: 3581428904182974153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: poyo_spritesheet_8
-      rect:
-        serializedVersion: 2
-        x: 957
-        y: 0
-        width: 36
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1bc26459eff10170800000000000000
-      internalID: 8143070978870790940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: poyo_spritesheet_9
-      rect:
-        serializedVersion: 2
-        x: 1159
-        y: 0
-        width: 52
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e4d5751a9557e850800000000000000
-      internalID: 6406183115231188200
       vertices: []
       indices: 
       edges: []
