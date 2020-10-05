@@ -78,8 +78,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            //FindObjectOfType<GameOverMenu>().GameOver();
-            //SceneManager.LoadScene(0);
+            SceneManager.LoadScene(0);
         }
 
     }
