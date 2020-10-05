@@ -25,5 +25,9 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quitting");
         Application.Quit();
     }
+    public void RestartButton()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
 
