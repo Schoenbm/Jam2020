@@ -104,9 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0e351865ad2c09469256ccbdb7a84f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 8
-  runSpeed: 20
-  lifeSpan: 60
+  walkSpeed: 10
+  runSpeed: 21
+  lifeSpan: 50
   hitBoxAttack: {fileID: 5337936504493857722}
   cdAttack: 1
   source:
