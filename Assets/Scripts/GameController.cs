@@ -79,7 +79,6 @@ public class GameController : MonoBehaviour
         else
         {
             FindObjectOfType<GameOverMenu>().GameOver();
-            // SceneManager.LoadScene(0); // to change
         }
 
     }
@@ -111,5 +110,10 @@ public class GameController : MonoBehaviour
         int eggsCollectedRun = player.getEggCount();
         Debug.Log(player.getEggCount());
         eggText.text = (eggsCollectedRun + totalEggsCollected).ToString() + " / " + totalEggs; 
+    }
+
+    public int getScore()
+    {
+        return totalEggsCollected + player.getEggCount();
     }
 }
