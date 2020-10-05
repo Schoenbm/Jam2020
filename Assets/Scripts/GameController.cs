@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    public GameObject looseMenu;
+    public AudioManager audioManager;
+
     public Transform spawnPoint;
     public Text timerText;
     public Text eggText;
@@ -78,7 +81,8 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(0);
+            audioManager.playLoose();
+            looseMenu.SetActive(true);
         }
 
     }
