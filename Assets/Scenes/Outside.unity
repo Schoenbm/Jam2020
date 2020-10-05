@@ -139312,6 +139312,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8863280863299911181, guid: ca114ecaac6c6b5479d2ec6c3f8b1430,
         type: 3}
+      propertyPath: playerPrefabs.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8863280863299911181, guid: ca114ecaac6c6b5479d2ec6c3f8b1430,
+        type: 3}
       propertyPath: timerText
       value: 
       objectReference: {fileID: 1281150397}
@@ -139350,6 +139355,24 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 2010014852}
+    - target: {fileID: 8863280863299911181, guid: ca114ecaac6c6b5479d2ec6c3f8b1430,
+        type: 3}
+      propertyPath: playerPrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 6151383942326135831, guid: 2ccfa05b2b0161842a82cc0af9fd7642,
+        type: 3}
+    - target: {fileID: 8863280863299911181, guid: ca114ecaac6c6b5479d2ec6c3f8b1430,
+        type: 3}
+      propertyPath: playerPrefabs.Array.data[6]
+      value: 
+      objectReference: {fileID: 200027140295577440, guid: 377d959b141e8cf4bb3b029bd2517a58,
+        type: 3}
+    - target: {fileID: 8863280863299911181, guid: ca114ecaac6c6b5479d2ec6c3f8b1430,
+        type: 3}
+      propertyPath: playerPrefabs.Array.data[7]
+      value: 
+      objectReference: {fileID: 8755657666337431420, guid: fd5a5289419a13c4f96c8c8b0de4efa3,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca114ecaac6c6b5479d2ec6c3f8b1430, type: 3}
 --- !u!1 &1772948017
