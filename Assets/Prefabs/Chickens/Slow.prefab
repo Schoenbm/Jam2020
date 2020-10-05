@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 8
   runSpeed: 20
-  lifeSpan: 50
+  lifeSpan: 60
   hitBoxAttack: {fileID: 5337936504493857722}
   cdAttack: 1
   source:
