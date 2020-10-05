@@ -60,7 +60,7 @@ public class Onions : MonoBehaviour
             {
                 Debug.Log("Alert sent");
                 if(foundPlayer)
-                    collision.gameObject.GetComponent<Onions>().alertOnion(this.aPlayer);
+                    collision.gameObject.GetComponent<OnionListener>().listenOnion(this.aPlayer);
 
                 direction = this.transform.position - collision.transform.position;
 

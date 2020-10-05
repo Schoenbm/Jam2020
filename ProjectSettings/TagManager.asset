@@ -8,6 +8,7 @@ TagManager:
   - Egg
   - Onion
   - Attack
+  - OnionSpawner
   layers:
   - Default
   - TransparentFX

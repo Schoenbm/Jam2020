@@ -43,12 +43,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a99038eb9e1fe498aa89c88dcf6bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 0}
   timerText: {fileID: 0}
   eggText: {fileID: 0}
   totalEggs: 3
   playerPrefabs:
-  - {fileID: 5319935248459791567, guid: 74f6c5cffa1606a4cb12e67d4c05f44e, type: 3}
-  - {fileID: 5319935248459791567, guid: 74f6c5cffa1606a4cb12e67d4c05f44e, type: 3}
+  - {fileID: 7856114335784220293, guid: d6b1b4ff298c1cc4e9185157317fe5e5, type: 3}
+  - {fileID: 1873757102790506912, guid: 7edaafe8506cdf54cbf8685dabaf19b4, type: 3}
+  - {fileID: 2946842345309789281, guid: 36cbe87a85eb74f4c8369280e34a8923, type: 3}
+  - {fileID: 6038070876055997840, guid: 3eb9cef571367d240821d954d55c59d0, type: 3}
+  - {fileID: 6390854882895879219, guid: d7353786e3831b94bb84470d61022fab, type: 3}
   cameras:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2946842345309789281, guid: 36cbe87a85eb74f4c8369280e34a8923, type: 3}
+  - {fileID: 2946842345309789281, guid: 36cbe87a85eb74f4c8369280e34a8923, type: 3}

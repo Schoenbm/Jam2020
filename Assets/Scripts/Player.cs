@@ -101,6 +101,7 @@ public class Player : MonoBehaviour
         {
             hasEgg = true;
             collectedEggs++;
+            source[4].Play();
             Debug.Log("collected : " + collectedEggs);
             Destroy(collision.gameObject);
         }

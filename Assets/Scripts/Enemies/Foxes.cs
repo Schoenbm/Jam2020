@@ -5,13 +5,16 @@ using UnityEngine;
 public class Foxes : MonoBehaviour
 {
     [SerializeField] private float speed = 0;
-    public Vector3 Destination;
-    public Vector3 Origin;
+
+    public   Transform DestTransform;
+    private  Vector3 Destination;
+    private  Vector3 Origin;
 
     // Start is called before the first frame update
     void Start()
     {
-        this.transform.position = Origin;
+        Destination = DestTransform.position;
+        Origin = this.transform.position;
 
         if (Destination.x - Origin.x > 0)
         {

@@ -28,11 +28,10 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int randInt = Random.Range(0, playerPrefabs.Length);
         if(spawnPoint != null)
-            player = Instantiate(playerPrefabs[randInt], spawnPoint.position, Quaternion.identity).GetComponent<Player>();
+            player = Instantiate(playerPrefabs[2], spawnPoint.position, Quaternion.identity).GetComponent<Player>();
         else
-            player = Instantiate(playerPrefabs[randInt]).GetComponent<Player>();
+            player = Instantiate(playerPrefabs[2]).GetComponent<Player>();
 
         player.setGameController(this);
         timeLeft = player.lifeSpan;

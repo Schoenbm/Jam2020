@@ -126,9 +126,10 @@ GameObject:
   - component: {fileID: 7228119690492876977}
   - component: {fileID: 3156226970899543534}
   - component: {fileID: 2671534521174694159}
+  - component: {fileID: 3877815274131241811}
   m_Layer: 2
   m_Name: Onion
-  m_TagString: Untagged
+  m_TagString: Onion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,6 +196,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3761435, y: 3.7060385}
   m_EdgeRadius: 0
+--- !u!114 &3877815274131241811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2179496009993763820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6ba4b1f0ffaef46bca9f236b22443f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1898236342054897888
 PrefabInstance:
   m_ObjectHideFlags: 0
