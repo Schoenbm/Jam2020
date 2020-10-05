@@ -12,6 +12,7 @@ public class Onions : MonoBehaviour
     [SerializeField] private float minSpeed;
     [SerializeField] private float maxSpeed;
     [SerializeField] private float maxDistance;
+    [SerializeField] private float rayMaxDistance = 3;
     [SerializeField] private float distanciationForce;
 
     private Vector3 direction;
@@ -39,7 +40,7 @@ public class Onions : MonoBehaviour
         {
             Debug.Log("found player on trigger");
             RaycastHit2D hit;
-            hit = Physics2D.Raycast(this.transform.position, collision.gameObject.transform.position - this.transform.position);
+            hit = Physics2D.Raycast(this.transform.position, collision.gameObject.transform.position - this.transform.position, (collision.gameObject.transform.position - this.transform.position).magnitude);
             if (hit.collider == null)
             {
                 foundPlayer = true;
@@ -48,14 +49,15 @@ public class Onions : MonoBehaviour
             }
             else
             {
-                Debug.Log("problem : object in between = " + collision.gameObject.name);
+                Debug.Log("problem : object in between = " + hit.collider.gameObject.name);
+                Debug.DrawLine(this.transform.position, collision.gameObject.transform.position);
             }
         }
 
         if (collision.gameObject.tag.Equals("Onion"))
         {
             RaycastHit2D hit;
-            hit = Physics2D.Raycast(this.transform.position, collision.gameObject.transform.position - this.transform.position);
+            hit = Physics2D.Raycast(this.transform.position, collision.gameObject.transform.position, maxDistance);
             if (hit.collider == null)
             {
                 Debug.Log("Alert sent");

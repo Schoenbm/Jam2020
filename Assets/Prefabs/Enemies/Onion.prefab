@@ -274,6 +274,11 @@ PrefabInstance:
       propertyPath: alarmAudio
       value: 
       objectReference: {fileID: 5388236207015175504}
+    - target: {fileID: 2264604568484446359, guid: b678ee94960f97b40ad8f955d699e811,
+        type: 3}
+      propertyPath: rayMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2917789841791520244, guid: b678ee94960f97b40ad8f955d699e811,
         type: 3}
       propertyPath: m_Offset.x

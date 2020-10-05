@@ -31,7 +31,7 @@ public class GameOverMenu : MonoBehaviour
         {
             gameHadEnded = true;
             GameVictoryEvent.SetActive(true);
-            ScoreEggs.text = gameController.getScore().ToString;
+            ScoreEggs.text = gameController.getScore().ToString();
             gameHadEnded = false;
         }
     }
