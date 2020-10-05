@@ -9,8 +9,6 @@ public class OnionHitBox : MonoBehaviour
     public Rigidbody2D rb2d;
     public bool ded = false;
 
-    //TODO : Kill current chicken if hits chicken
-    //a destroy parent function if hit by attack
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

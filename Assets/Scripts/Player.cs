@@ -29,10 +29,12 @@ public class Player : MonoBehaviour
     private float actualCd;
 
     private Animator animator;
+    private bool blocked;
 
     // Start is called before the first frame update
     void Start()
     {
+        blocked = false;
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         hitBoxAttack.enabled =false;
@@ -42,9 +44,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Animate();
-        Move();
-        Attack();
+        if( !blocked)
+        {
+            Animate();
+            Move();
+            Attack();
+        }
     }
 
     void Move()
@@ -73,11 +78,15 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
-        this.gameController.manageDeath(collectedEggs);
-        
-        source[2].Play();
-        this.GetComponent<SpriteRenderer>().enabled = false;
-        Destroy(gameObject,1f); 
+        if (!blocked)
+        {
+            this.gameController.manageDeath(collectedEggs);
+
+            source[2].Play();
+            blocked = true;
+            spriteRenderer.enabled = false;
+            Destroy(gameObject, 1f);
+        }
     }
 
 
