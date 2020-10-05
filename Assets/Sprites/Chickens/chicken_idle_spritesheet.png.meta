@@ -1,0 +1,1544 @@
+fileFormatVersion: 2
+guid: 2971727ae3f261a428316aa09ab8b81e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6981276530005186346
+    second: chicken_idle_spritesheet_0
+  - first:
+      213: -3813134354084871658
+    second: chicken_idle_spritesheet_1
+  - first:
+      213: -5757576865056695649
+    second: chicken_idle_spritesheet_2
+  - first:
+      213: 7386463874364000151
+    second: chicken_idle_spritesheet_3
+  - first:
+      213: -8687413172518374334
+    second: chicken_idle_spritesheet_4
+  - first:
+      213: -3023529120818387941
+    second: chicken_idle_spritesheet_42
+  - first:
+      213: 8874239061089034450
+    second: chicken_idle_spritesheet_5
+  - first:
+      213: 8113424037484351111
+    second: chicken_idle_spritesheet_6
+  - first:
+      213: 7060021979615081269
+    second: chicken_idle_spritesheet_7
+  - first:
+      213: -5929915777273966533
+    second: chicken_idle_spritesheet_8
+  - first:
+      213: -908423596571926258
+    second: chicken_idle_spritesheet_9
+  - first:
+      213: -7759883462961855832
+    second: chicken_idle_spritesheet_43
+  - first:
+      213: -5327645870181253417
+    second: chicken_idle_spritesheet_10
+  - first:
+      213: 533394281774407494
+    second: chicken_idle_spritesheet_11
+  - first:
+      213: 4515697191270292302
+    second: chicken_idle_spritesheet_12
+  - first:
+      213: 1932672945301173549
+    second: chicken_idle_spritesheet_13
+  - first:
+      213: -630008931326732014
+    second: chicken_idle_spritesheet_14
+  - first:
+      213: 3182494951281273286
+    second: chicken_idle_spritesheet_44
+  - first:
+      213: 8041594166832566095
+    second: chicken_idle_spritesheet_15
+  - first:
+      213: 1724439188476597447
+    second: chicken_idle_spritesheet_16
+  - first:
+      213: 7992736071801980991
+    second: chicken_idle_spritesheet_17
+  - first:
+      213: 5690829868977529177
+    second: chicken_idle_spritesheet_18
+  - first:
+      213: -3565344797860775679
+    second: chicken_idle_spritesheet_19
+  - first:
+      213: -2880170626316142266
+    second: chicken_idle_spritesheet_49
+  - first:
+      213: -7766167971500656723
+    second: chicken_idle_spritesheet_20
+  - first:
+      213: 6377056079949702044
+    second: chicken_idle_spritesheet_21
+  - first:
+      213: 4094033564491184260
+    second: chicken_idle_spritesheet_22
+  - first:
+      213: 915159183162693887
+    second: chicken_idle_spritesheet_23
+  - first:
+      213: -2762307296314727946
+    second: chicken_idle_spritesheet_24
+  - first:
+      213: -6684798564957208416
+    second: chicken_idle_spritesheet_45
+  - first:
+      213: -7506191784780726039
+    second: chicken_idle_spritesheet_25
+  - first:
+      213: 2586617073651481887
+    second: chicken_idle_spritesheet_26
+  - first:
+      213: 324066931409349840
+    second: chicken_idle_spritesheet_27
+  - first:
+      213: -5764492756189883815
+    second: chicken_idle_spritesheet_28
+  - first:
+      213: -7421554964251326127
+    second: chicken_idle_spritesheet_29
+  - first:
+      213: -1031083796761266756
+    second: chicken_idle_spritesheet_46
+  - first:
+      213: -3014141945315524422
+    second: chicken_idle_spritesheet_30
+  - first:
+      213: 8073152421048257808
+    second: chicken_idle_spritesheet_31
+  - first:
+      213: 4209355340797190713
+    second: chicken_idle_spritesheet_32
+  - first:
+      213: -4905660356801719302
+    second: chicken_idle_spritesheet_33
+  - first:
+      213: -7415545352323794569
+    second: chicken_idle_spritesheet_34
+  - first:
+      213: 1164770719301978831
+    second: chicken_idle_spritesheet_47
+  - first:
+      213: -5167871448374879108
+    second: chicken_idle_spritesheet_35
+  - first:
+      213: -2481714262022683531
+    second: chicken_idle_spritesheet_36
+  - first:
+      213: 901078785384388953
+    second: chicken_idle_spritesheet_37
+  - first:
+      213: -4428210425482389143
+    second: chicken_idle_spritesheet_38
+  - first:
+      213: 6460987898775930358
+    second: chicken_idle_spritesheet_39
+  - first:
+      213: 7969019864797060794
+    second: chicken_idle_spritesheet_48
+  - first:
+      213: -8550226111184676729
+    second: chicken_idle_spritesheet_40
+  - first:
+      213: -6143560782412156312
+    second: chicken_idle_spritesheet_41
+  - first:
+      213: -3186660066233372476
+    second: chicken_idle_spritesheet_42
+  - first:
+      213: -5257115399737057503
+    second: chicken_idle_spritesheet_43
+  - first:
+      213: 1004396997064030020
+    second: chicken_idle_spritesheet_44
+  - first:
+      213: 5617556235485010436
+    second: chicken_idle_spritesheet_49
+  - first:
+      213: -7939758119081736251
+    second: chicken_idle_spritesheet_45
+  - first:
+      213: -4446154319737392692
+    second: chicken_idle_spritesheet_46
+  - first:
+      213: -6728910879751187258
+    second: chicken_idle_spritesheet_47
+  - first:
+      213: -1344177188250699328
+    second: chicken_idle_spritesheet_48
+  - first:
+      213: -8684742400340262346
+    second: chicken_idle_spritesheet_49
+  - first:
+      213: -2241302445721212743
+    second: chicken_idle_spritesheet_59
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 9741
+        width: 1920
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8e44efbf58d1f90800000000000000
+      internalID: -6981276530005186346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 9741
+        width: 1920
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612ceeff186051bc0800000000000000
+      internalID: -3813134354084871658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 9741
+        width: 1920
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ad94f985af810b0800000000000000
+      internalID: -5757576865056695649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 5767
+        y: 9741
+        width: 1920
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797c8b132cdf18660800000000000000
+      internalID: 7386463874364000151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 9741
+        width: 1920
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2443efa5fbb107780800000000000000
+      internalID: -8687413172518374334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 9611
+        y: 9741
+        width: 1920
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b142291b8444a06d0800000000000000
+      internalID: -3023529120818387941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 8663
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0ab188861a72b70800000000000000
+      internalID: 8874239061089034450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 8663
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ece52ec2ca89070800000000000000
+      internalID: 8113424037484351111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 8663
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5333869b59c3af160800000000000000
+      internalID: 7060021979615081269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 5767
+        y: 8663
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30d993c405b4bda0800000000000000
+      internalID: -5929915777273966533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 7689
+        y: 8663
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e016fbc4d81a463f0800000000000000
+      internalID: -908423596571926258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 9611
+        y: 8663
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a20bb3aa1b5f4490800000000000000
+      internalID: -7759883462961855832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 7585
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7def4c2ee466016b0800000000000000
+      internalID: -5327645870181253417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 7585
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f5362f54ff66700800000000000000
+      internalID: 533394281774407494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 7585
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b15e69baafaae30800000000000000
+      internalID: 4515697191270292302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 5767
+        y: 7585
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d253fa3ddcb32da10800000000000000
+      internalID: 1932672945301173549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 7689
+        y: 7585
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21952f20732c147f0800000000000000
+      internalID: -630008931326732014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 9611
+        y: 7585
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9289eeb4e7a2c20800000000000000
+      internalID: 3182494951281273286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 6507
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f88edd94b799f60800000000000000
+      internalID: 8041594166832566095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 6507
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c419e13e407ee710800000000000000
+      internalID: 1724439188476597447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 6507
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3845372c17ebee60800000000000000
+      internalID: 7992736071801980991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 5767
+        y: 6507
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951a6915d93e9fe40800000000000000
+      internalID: 5690829868977529177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 7689
+        y: 6507
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109b8bddbc9558ec0800000000000000
+      internalID: -3565344797860775679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 9611
+        y: 6507
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64979ed33149708d0800000000000000
+      internalID: -2880170626316142266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5429
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7ffa87067093490800000000000000
+      internalID: -7766167971500656723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 5429
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93a526b7badf7850800000000000000
+      internalID: 6377056079949702044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 5429
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488f506f5dde0d830800000000000000
+      internalID: 4094033564491184260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 5767
+        y: 5429
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff85959ad6c43bc00800000000000000
+      internalID: 915159183162693887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 7689
+        y: 5429
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1e0ba36205aa9d0800000000000000
+      internalID: -2762307296314727946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 9611
+        y: 5429
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a04fac6f13da33a0800000000000000
+      internalID: -6684798564957208416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4351
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0803c5756a4d790800000000000000
+      internalID: -7506191784780726039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 4351
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1df4f4268285e320800000000000000
+      internalID: 2586617073651481887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 4351
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcea1a38215f7400800000000000000
+      internalID: 324066931409349840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 5767
+        y: 4351
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9525dfc31686000b0800000000000000
+      internalID: -5764492756189883815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 7689
+        y: 4351
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15943c2c417510990800000000000000
+      internalID: -7421554964251326127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 9611
+        y: 4351
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb53260ffbad0b1f0800000000000000
+      internalID: -1031083796761266756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3273
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab00ddecedd9b26d0800000000000000
+      internalID: -3014141945315524422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 3273
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d8a228a59990070800000000000000
+      internalID: 8073152421048257808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 3273
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9322c9d5162aa6a30800000000000000
+      internalID: 4209355340797190713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 5767
+        y: 3273
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af31e1495e79bebb0800000000000000
+      internalID: -4905660356801719302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 7689
+        y: 3273
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779f0f29ac0b61990800000000000000
+      internalID: -7415545352323794569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 9611
+        y: 3273
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca45c84cc81a2010800000000000000
+      internalID: 1164770719301978831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2195
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c5bba5c480848b0800000000000000
+      internalID: -5167871448374879108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 2195
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5740e12070e2f8dd0800000000000000
+      internalID: -2481714262022683531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 2195
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9591a759166418c00800000000000000
+      internalID: 901078785384388953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 5767
+        y: 2195
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969d0766416db82c0800000000000000
+      internalID: -4428210425482389143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 7689
+        y: 2195
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f503ac134a0aa950800000000000000
+      internalID: 6460987898775930358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 9611
+        y: 2195
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe92496855a79e60800000000000000
+      internalID: 7969019864797060794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1117
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788519527ae775980800000000000000
+      internalID: -8550226111184676729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 1117
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8627d44b400bdbaa0800000000000000
+      internalID: -6143560782412156312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 1117
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0bc3cad85b6c3d0800000000000000
+      internalID: -3186660066233372476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 5767
+        y: 1117
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fdf67b569fa07b0800000000000000
+      internalID: -5257115399737057503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 7689
+        y: 1117
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447787f4fb550fd00800000000000000
+      internalID: 1004396997064030020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 9611
+        y: 1117
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a5dd112a195fd40800000000000000
+      internalID: 5617556235485010436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 39
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c70c9dae0050d190800000000000000
+      internalID: -7939758119081736251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 39
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1fb73f3361c42c0800000000000000
+      internalID: -4446154319737392692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 39
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c45b27c43b1e92a0800000000000000
+      internalID: -6728910879751187258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 5767
+        y: 38
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9322318f5885de0800000000000000
+      internalID: -1344177188250699328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 7689
+        y: 39
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63202f5fcc8997780800000000000000
+      internalID: -8684742400340262346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_idle_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 9611
+        y: 39
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8a290fc4b45e0e0800000000000000
+      internalID: -2241302445721212743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
