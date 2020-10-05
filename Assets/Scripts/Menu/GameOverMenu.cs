@@ -19,6 +19,7 @@ public class GameOverMenu : MonoBehaviour
         {
             gameHadEnded = true;
             Debug.Log("GameOver");
+            Time.timeScale = 0f;
             GameOverEvent.SetActive(true);
             gameHadEnded = false;
             
@@ -29,6 +30,7 @@ public class GameOverMenu : MonoBehaviour
     {
         if(gameHadEnded == false)
         {
+            Time.timeScale = 0f;
             gameHadEnded = true;
             GameVictoryEvent.SetActive(true);
             ScoreEggs.text = gameController.getScore().ToString();
