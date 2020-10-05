@@ -79,7 +79,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.43110323, y: -0.5805948}
+  m_Offset: {x: 1.2438025, y: 0.7541013}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -90,7 +90,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.8740244, y: 5.083903}
+  m_Size: {x: 11.097064, y: 5.7643385}
   m_EdgeRadius: 0
 --- !u!1 &4830884170695358511
 GameObject:
@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 8432702783020698596}
   - component: {fileID: 2343459954480573334}
   - component: {fileID: 4081870727103976339}
+  - component: {fileID: 506985520}
   m_Layer: 0
   m_Name: fox
   m_TagString: Untagged
@@ -162,9 +163,10 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 148379399
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: db2e6c6ddf93421448f85bf9be140d7f, type: 3}
+  m_Sprite: {fileID: 3825336972823220324, guid: 9dee220471ec27a4dbf8bc19dc0faa61,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -190,3 +192,22 @@ MonoBehaviour:
   speed: 20
   Destination: {x: 0, y: 0, z: 0}
   Origin: {x: 0, y: 0, z: 0}
+--- !u!95 &506985520
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4830884170695358511}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f6cb4d3a1d027214588160975b34d6a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
