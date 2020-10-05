@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 830493200078719720}
   - component: {fileID: 7294737864007758518}
   - component: {fileID: 6332460210967364907}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: huevo2
   m_TagString: Egg
   m_Icon: {fileID: 0}

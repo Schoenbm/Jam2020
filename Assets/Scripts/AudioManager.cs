@@ -29,6 +29,6 @@ public class AudioManager : MonoBehaviour
     public void playLoose()
     {
         mainTheme.Stop();
-        winMelody.Play();
+        gameOverMelody.Play();
     }
 }
