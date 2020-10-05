@@ -6,6 +6,9 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource onionDed;
     public AudioSource chickenDed;
+    public AudioSource winMelody;
+    public AudioSource gameOverMelody;
+    public AudioSource mainTheme;
 
     public void playOnionDeath()
     {
@@ -15,5 +18,17 @@ public class AudioManager : MonoBehaviour
     public void playChickenDed()
     {
         chickenDed.Play();
+    }
+
+    public void playWin()
+    {
+        mainTheme.Stop();
+        winMelody.Play();
+    }
+
+    public void playLoose()
+    {
+        mainTheme.Stop();
+        winMelody.Play();
     }
 }
