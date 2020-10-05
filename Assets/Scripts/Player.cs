@@ -179,9 +179,4 @@ public class Player : MonoBehaviour
     {
         this.gameController = pGC;
     }
-
-    public void setBlocked(bool bol)
-    {
-        blocked = bol;
-    }
 }
