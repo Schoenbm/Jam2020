@@ -134,7 +134,9 @@ public class Player : MonoBehaviour
 
     public int getEggCount()
     {
-        return collectedEggs;
+        if(!blocked)
+            return collectedEggs;
+        return 0;
     }
 
     public void Attack()
