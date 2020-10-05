@@ -26,6 +26,7 @@ public class Onions : MonoBehaviour
 
     public void Start()
     {
+        foundPlayer = false;
         rb2d = this.gameObject.GetComponentInParent<Rigidbody2D>();
         speed = Random.Range(minSpeed, maxSpeed);
         animator = GetComponent<Animator>();
@@ -47,7 +48,7 @@ public class Onions : MonoBehaviour
             }
             else
             {
-                Debug.Log("problem : object in between");
+                Debug.Log("problem : object in between = " + collision.gameObject.name);
             }
         }
 

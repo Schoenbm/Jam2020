@@ -182,7 +182,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16474962, y: -0.2035141}
+  m_Offset: {x: -0.16474962, y: -0.7715502}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -193,7 +193,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3761435, y: 2.5699663}
+  m_Size: {x: 2.3761435, y: 3.7060385}
   m_EdgeRadius: 0
 --- !u!1001 &1898236342054897888
 PrefabInstance:
@@ -221,6 +221,11 @@ PrefabInstance:
       propertyPath: rb2d
       value: 
       objectReference: {fileID: 3156226970899543534}
+    - target: {fileID: 662158463916268454, guid: b678ee94960f97b40ad8f955d699e811,
+        type: 3}
+      propertyPath: m_Radius
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 744083010132771021, guid: b678ee94960f97b40ad8f955d699e811,
         type: 3}
       propertyPath: m_Volume
@@ -256,6 +261,21 @@ PrefabInstance:
       propertyPath: alarmAudio
       value: 
       objectReference: {fileID: 5388236207015175504}
+    - target: {fileID: 2917789841791520244, guid: b678ee94960f97b40ad8f955d699e811,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.10641289
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917789841791520244, guid: b678ee94960f97b40ad8f955d699e811,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.81428933
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917789841791520244, guid: b678ee94960f97b40ad8f955d699e811,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 4.2707853
+      objectReference: {fileID: 0}
     - target: {fileID: 3185862598213677062, guid: b678ee94960f97b40ad8f955d699e811,
         type: 3}
       propertyPath: m_LocalPosition.x

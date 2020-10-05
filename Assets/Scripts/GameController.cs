@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
     {
         int randInt = Random.Range(0, playerPrefabs.Length);
         if(spawnPoint != null)
-            player = Instantiate(playerPrefabs[randInt], spawnPoint).GetComponent<Player>();
+            player = Instantiate(playerPrefabs[randInt], spawnPoint.position, Quaternion.identity).GetComponent<Player>();
         else
             player = Instantiate(playerPrefabs[randInt]).GetComponent<Player>();
 
